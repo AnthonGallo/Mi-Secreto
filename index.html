@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carta Secreta 2 by myeya</title>
+  <title>Carta Secreta by myeya</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -77,17 +77,19 @@
     .notepad {
       background-color: #f9f9f9;
       border: 3px solid #000000;
-      padding: 20px;
+      padding: 30px;
       border-radius: 20px;
       width: 90%;
-      max-width: 500px;
+      max-width: 600px;
       text-align: left;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Georgia', serif;
       line-height: 1.6;
       box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+      margin: 20px;
     }
     .notepad h3 {
       margin-top: 0;
+      color: #d32f2f;
     }
     .password-img {
       width: 260px; 
@@ -97,20 +99,22 @@
       box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
       margin-bottom: 20px;
     }
-    .note-img {
+    .letter-img {
       width: 100%;
       max-width: 450px;
       height: auto;
       border-radius: 15px;
-      margin-bottom: 15px;
+      margin: 20px 0;
       box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+      border: 2px solid #ccc;
     }
     .back-btn {
       display: inline-block;
-      margin-top: 15px;
-      background-color: white;
+      margin-top: 25px;
+      background-color: #d32f2f;
+      color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 16px;
       border-radius: 8px;
       cursor: pointer;
@@ -118,18 +122,33 @@
       transition: all 0.2s ease;
     }
     .back-btn:hover {
-      background-color: #ded8d8;
+      background-color: #b71c1c;
       transform: translateY(-2px);
     }
+    .signature {
+      text-align: right;
+      font-style: italic;
+      margin-top: 30px;
+      color: #555;
+      font-family: 'Dancing Script', cursive;
+      font-size: 24px;
+    }
+    .date {
+      color: #777;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="hearts"></div>
 <div id="passwordScreen" class="screen password-screen active">
-<img src="https://acortar.link/el8Gwt" 
-     alt="Imagen decorativa" 
-     class="password-img" 
-     style="width: 300px; height: auto;">
+  <img src="https://acortar.link/el8Gwt" 
+       alt="Imagen decorativa" 
+       class="password-img" 
+       style="width: 300px; height: auto;">
   <h2>🔒 Ingresa la contraseña</h2>
   <div class="input-display" id="inputDisplay">••••</div>
   <div class="keypad">
@@ -147,63 +166,68 @@
     <button class="key" onclick="deleteLast()">⌫</button>
   </div>
 </div>
+
 <div id="notepadScreen" class="screen">
-  <div class="notepad" style="text-align: center;">
-    <img src="https://acortar.link/HZbeah" 
-         alt="Imagen decorativa" 
-         class="password-img"
-         style="max-width: 100%; height: auto;">
-<h3 style="text-align: left; margin-bottom: 0;">📅 07 Agosto 2025</h3>
-<h4 style="text-align: left; margin-top: 0;">💌 Mi Querido Darlin</h4>
-<p style="text-align: justify;">
-  Magy,
-  Hay días que marcan el rumbo del corazón, y hoy, con el mío lleno hasta el borde, necesito que estas palabras
-  viajen más allá de la distancia que nos separa y lleguen a ti no como un mensaje, sino como un susurro.
-</p>
-<p style="text-align: justify;">
-  Todo comenzó sin planearlo, una chispa de coquetería en un mundo virtual, pero sin que yo lo supiera, 
-  ese fue el terreno donde decidió echar raíces la semilla de un sentimiento que hoy es un árbol frondoso. 
-  Contigo, lo que empezó con un juego se convirtió en la conversación más sincera de mis noches, y cada momento compartido, 
-  una constelación que ilumina mi cielo.
-</p>
-<p style="text-align: justify;">
-  Me he rendido ante el mapa de tu ser. Ante tu cabello, una corona de rizos ardientes como el atardecer en la playa; 
-  ante tu piel, ese lienzo de luna y canela que guarda el misterio de dos tierras. Tus ojos no son solo blancos y bonitos, 
-  son faros que guían mis pensamientos, enmarcados por pestañas que parecen hilos de luz. Tus pecas son las constelaciones 
-  que solo yo grabé de memoria, y tu sonrisa… tu sonrisa es el lugar más pacífico que he conocido sin haber visitado.
-</p>
-<p style="text-align: justify;">
-  Pero mi admiración no se queda en la orilla de tu físico. Te admiro por la mujer increíble que eres: por la magia que creas 
-  con tus manos en la repostería, transformando lo dulce en arte. Por tu fuerza, esa que te ha hecho invencible, pero que has 
-  permitido que yo vea frágil, confiando en mí tu vulnerabilidad. Ese honor es el tesoro más valioso que guardo.
-</p>
-<p style="text-align: justify;">
-  Eres directa, honesta, y tienes una forma de alegrar mi día con la chispa única de tu expresión. Tu voz se ha convertido en 
-  la banda sonora de mi paz, y sentirte cerca, aunque sea a través de una pantalla, hace que cada segundo contigo sea un regalo
-  que atesoro con emoción.
-</p>
-<p style="text-align: justify;">
-  La distancia quiere imponer sus reglas, pero mi corazón se niega. Porque, Wilmagy, me he encantado de cada parte de ti. 
-  Y aunque para muchos puedas parecer una estrella inalcanzable, de luz bella y divina, quiero ser para ti el firmamento que te sostiene.
-</p>
-</p>
-<p style="text-align: justify;">
-  No quiero alcanzarte para apagarte. Quiero alcanzarte para recorrer contigo el universo, para ser tu hogar, tu complicidad y tu paz, 
-  así como tú has sido la mía. Quiero ser ese "primer humano", que no intente bajarte del cielo, sino que te acompañe a brillar 
-  con más fuerza, aún más lejos.
-</p>
-<p style="text-align: justify;">
-  Este sentimiento ya no es un secreto, es una evidencia que late en mí cada día. Y hoy, en este día importante, quería que lo supieras 
-  con todas las letras y metáforas que mi alma pudo encontrar “Eres mi dulce y valiosa estrella venezolana. Y este corazón, desde Ecuador, es tuyo”.
-</p>
-<p style="text-align: justify;">
-  No fue un Game Over, fue un comienzo.
-  Con todo mi cariño,
-  Anthon
-</p>
-    <button class="back-btn" onclick="goBack()">🔙 Inicio</button>
+  <div class="notepad">
+    <img src="https://images.unsplash.com/photo-1516487106395-f2d269d6a21c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+         alt="Carta de amor" 
+         class="letter-img">
+    
+    <div class="date">📅 07 Agosto 2025</div>
+    <h3>💌 Mi Querido Darlin</h3>
+    
+    <p>
+      Magy,
+    </p>
+    <p>
+      Hay días que marcan el rumbo del corazón, y hoy, con el mío lleno hasta el borde, necesito que estas palabras
+      viajen más allá de la distancia que nos separa y lleguen a ti no como un mensaje, sino como un susurro.
+    </p>
+    <p>
+      Todo comenzó sin planearlo, una chispa de coquetería en un mundo virtual, pero sin que yo lo supiera, 
+      ese fue el terreno donde decidió echar raíces la semilla de un sentimiento que hoy es un árbol frondoso. 
+      Contigo, lo que empezó con un juego se convirtió en la conversación más sincera de mis noches, y cada momento compartido, 
+      una constelación que ilumina mi cielo.
+    </p>
+    <p>
+      Me he rendido ante el mapa de tu ser. Ante tu cabello, una corona de rizos ardientes como el atardecer en la playa; 
+      ante tu piel, ese lienzo de luna y canela que guarda el misterio de dos tierras. Tus ojos no son solo blancos y bonitos, 
+      son faros que guían mis pensamientos, enmarcados por pestañas que parecen hilos de luz. Tus pecas son las constelaciones 
+      que solo yo grabé de memoria, y tu sonrisa… tu sonrisa es el lugar más pacífico que he conocido sin haber visitado.
+    </p>
+    <p>
+      Pero mi admiración no se queda en la orilla de tu físico. Te admiro por la mujer increíble que eres: por la magia que creas 
+      con tus manos en la repostería, transformando lo dulce en arte. Por tu fuerza, esa que te ha hecho invencible, pero que has 
+      permitido que yo vea frágil, confiando en mí tu vulnerabilidad. Ese honor es el tesoro más valioso que guardo.
+    </p>
+    <p>
+      Eres directa, honesta, y tienes una forma de alegrar mi día con la chispa única de tu expresión. Tu voz se ha convertido en 
+      la banda sonora de mi paz, y sentirte cerca, aunque sea a través de una pantalla, hace que cada segundo contigo sea un regalo
+      que atesoro con emoción.
+    </p>
+    <p>
+      La distancia quiere imponer sus reglas, pero mi corazón se niega. Porque, Wilmagy, me he encantado de cada parte de ti. 
+      Y aunque para muchos puedas parecer una estrella inalcanzable, de luz bella y divina, quiero ser para ti el firmamento que te sostiene.
+    </p>
+    <p>
+      No quiero alcanzarte para apagarte. Quiero alcanzarte para recorrer contigo el universo, para ser tu hogar, tu complicidad y tu paz, 
+      así como tú has sido la mía. Quiero ser ese "primer humano", que no intente bajarte del cielo, sino que te acompañe a brillar 
+      con más fuerza, aún más lejos.
+    </p>
+    <p>
+      Este sentimiento ya no es un secreto, es una evidencia que late en mí cada día. Y hoy, en este día importante, quería que lo supieras 
+      con todas las letras y metáforas que mi alma pudo encontrar: "Eres mi dulce y valiosa estrella venezolana. Y este corazón, desde Ecuador, es tuyo".
+    </p>
+    <p>
+      No fue un Game Over, fue un comienzo.
+    </p>
+    
+    <div class="signature">Con todo mi cariño,<br>Anthon</div>
+    
+    <button class="back-btn" onclick="goBack()">🔙 Volver al Inicio</button>
   </div>
 </div>
+
 <script>
   function crearCorazones() {
     const heartsContainer = document.querySelector('.hearts');
@@ -219,21 +243,26 @@
     }, 500);
   }
   crearCorazones();
+  
   const correctPassword = '1005';
   let input = '';
+  
   function enterDigit(digit) {
     if (input.length < 4) {
       input += digit;
       updateDisplay();
     }
   }
+  
   function deleteLast() {
     input = input.slice(0, -1);
     updateDisplay();
   }
+  
   function updateDisplay() {
     document.getElementById('inputDisplay').textContent = input.padEnd(4, '•');
   }
+  
   function checkPassword() {
     if (input.length === 4) {
       if (input === correctPassword) {
@@ -248,6 +277,7 @@
       alert('Debes ingresar los 4 dígitos.');
     }
   }
+  
   function goBack() {
     document.getElementById('notepadScreen').classList.remove('active');
     document.getElementById('passwordScreen').classList.add('active');
@@ -256,5 +286,4 @@
   }
 </script>
 </body>
-
 </html>
